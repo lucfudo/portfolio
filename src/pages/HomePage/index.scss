@@ -1,0 +1,83 @@
+@import '../../theme';
+
+.homePage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - $nav-size);
+    overflow: hidden;
+    padding: $spacing;
+    position: relative;
+}
+
+
+.buttons{
+    margin-top: $spacing;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: $spacing;
+    
+    svg {
+        color: $color-primary;
+    }
+
+    :hover{
+        cursor: pointer;
+    }
+}
+
+button{
+    background-color: $color-primary;
+    border-radius: $border-radius;
+    height: 3rem;
+    width: 6rem;
+    text-align: center;
+    padding: 0 $spacing;
+    color: $white;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: auto;
+}
+
+
+.homePage > :last-child{
+    position: absolute;
+    top: 0;
+    opacity: 22%;
+    height: 100vh;
+}
+
+
+@media only screen and (min-width: $screen-tablet) {
+    .homePage{
+        padding: 0 $gutter;
+    }
+    .homePage > :first-child {
+        margin-top: $gutter;
+    }
+    .homePage > :last-child{
+        width: 100%;
+    }
+  }
+
+@media only screen and (min-width: $screen-web1){
+    .homePage{
+        flex-direction: row;
+    }
+    .homePage > :first-child {
+        margin-top: 0;
+    }
+    .homePage > :last-child{
+        position: relative;
+        opacity: 100%;
+    }
+    .homePageContainer{
+        margin-right: $gutter;
+    }
+    .buttons{
+        margin-top: $gutter;
+    }
+}

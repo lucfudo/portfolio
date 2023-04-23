@@ -1,0 +1,70 @@
+@import '../../theme';
+
+.skillsPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: $spacing;
+    gap: $spacing;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - $nav-size * 4);
+
+    align-items: center;
+}
+
+.paragraph{
+    text-align: center;
+}
+.paragraph::first-letter{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.slider{
+    display: flex;
+    flex-direction: row;
+    gap: $spacing;
+}
+.point{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: $color-primary;
+}
+.point_inactive{ 
+    background-color: $color-bg;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+
+@media only screen and (min-width: $screen-web1){
+    .skillsPage{
+        margin: $gutter 0;
+        gap: $gutter;
+    }
+    .content{
+        height: 100%;
+        padding: 0 $gutter;
+    }
+    .paragraph{
+        text-align: left;
+    }
+    .content:nth-child(even) {
+        flex-direction: row-reverse;
+        .paragraph{
+            margin-right: $spacing * 10;
+        }
+      }
+      .content:nth-child(odd) {
+          flex-direction: row;
+          .paragraph{
+            margin-left: $spacing * 10;
+          }
+        }
+}

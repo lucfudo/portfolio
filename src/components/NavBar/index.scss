@@ -1,0 +1,20 @@
+@import '../../theme';
+
+.navBar{
+    background-color: $color-primary;
+    height: $nav-size;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > :first-child{
+        height: 80%;
+    }
+}
+
+@media only screen and (min-width: $screen-tablet) {
+    .navBar{
+        padding: 0 $gutter; 
+    }
+}
