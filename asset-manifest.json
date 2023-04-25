@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.61c3a8f4.css",
-    "main.js": "/portfolio/static/js/main.ac50355d.js",
+    "main.css": "/portfolio/static/css/main.e2711ba0.css",
+    "main.js": "/portfolio/static/js/main.9e40ccd5.js",
     "static/media/cv_lucas_grondin.pdf": "/portfolio/static/media/cv_lucas_grondin.1c12880bd69d5206c1c1.pdf",
+    "static/media/fudanime.png": "/portfolio/static/media/fudanime.812ffe0844e119e0ad97.png",
     "static/media/illustration-home.svg": "/portfolio/static/media/illustration-home.e18042a5059bea12d0270ea925fe09a3.svg",
     "static/media/illustration-workProcess-1.png": "/portfolio/static/media/illustration-workProcess-1.2129b2322dfd4622537d.png",
     "static/media/illustration-idea-1.png": "/portfolio/static/media/illustration-idea-1.48c785e950ddbadca0ad.png",
@@ -16,11 +17,11 @@
     "static/media/illustration-idea-2.png": "/portfolio/static/media/illustration-idea-2.185dd8538fb5aa499482.png",
     "index.html": "/portfolio/index.html",
     "static/media/logo.svg": "/portfolio/static/media/logo.4116b14eef9e5c943e4766b9bccd14c9.svg",
-    "main.61c3a8f4.css.map": "/portfolio/static/css/main.61c3a8f4.css.map",
-    "main.ac50355d.js.map": "/portfolio/static/js/main.ac50355d.js.map"
+    "main.e2711ba0.css.map": "/portfolio/static/css/main.e2711ba0.css.map",
+    "main.9e40ccd5.js.map": "/portfolio/static/js/main.9e40ccd5.js.map"
   },
   "entrypoints": [
-    "static/css/main.61c3a8f4.css",
-    "static/js/main.ac50355d.js"
+    "static/css/main.e2711ba0.css",
+    "static/js/main.9e40ccd5.js"
   ]
 }
