@@ -8,17 +8,17 @@ const NavButtons = () => {
         {
             isActive: false,
             text: texts.n_home,
-            link: "/"
+            link: "/portfolio"
         },
         {
             isActive: false,
             text: texts.n_skills,
-            link: "/skills"
+            link: "/portfolio/skills"
         },
         {
             isActive: false,
             text: texts.n_projects,
-            link: "/projects"
+            link: "/portfolio/projects"
         },
     ]);
 
