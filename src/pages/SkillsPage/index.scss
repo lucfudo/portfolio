@@ -42,6 +42,11 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
+@media only screen and (min-width: $screen-tablet) {
+    .content{
+        padding: 0 $gutter;
+    }
+}
 
 @media only screen and (min-width: $screen-web1){
     .skillsPage{

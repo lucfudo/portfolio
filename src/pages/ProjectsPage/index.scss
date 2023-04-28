@@ -1,1 +1,10 @@
+@import '../../theme';
 
+.projectsPage{
+    padding: 0 $spacing;
+}
+@media only screen and (min-width: $screen-tablet) {
+    .projectsPage{
+        padding: 0 $gutter;
+    }
+}

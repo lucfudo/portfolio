@@ -6,6 +6,8 @@ import './index.scss';
 
 import texts from '../../constants/texts.json';
 
+const CV = 'cv';
+
 const HomePage = () => {
     const paragraphs = texts.presentation.split('\n');
 
@@ -24,17 +26,17 @@ const HomePage = () => {
                     ))}
                 </div>
                 <div className="buttons">
-                    {BUTTON_CONFIG.map((button) => {
+                    {BUTTON_CONFIG.map((button, index) => {
                         return (
-                            <>
+                            <div key={index}>
                                 {   
-                                button?.id == 'cv' ? 
+                                button?.id == CV ? 
                                     <button>{button.label}</button>: 
                                     <div key={button.id} onClick={() => handleButtonClick(button.link)}>
                                         {button.icon} 
                                     </div> 
                                 }
-                            </>
+                            </div>
                         )
                     })}
                 </div>

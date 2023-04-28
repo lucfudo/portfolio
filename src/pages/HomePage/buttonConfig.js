@@ -6,12 +6,12 @@ export const BUTTON_CONFIG = [
     {
       id: 'github',
       link: LINK_GITHUB,
-      icon: <AiFillGithub size="3rem" />,
+      icon: <AiFillGithub size="2rem" />,
     },
     {
       id: 'linkedin',
       link: LINK_LINKEDIN,
-      icon: <AiFillLinkedin size="3rem" />,
+      icon: <AiFillLinkedin size="2rem" />,
     },
     {
       id: 'cv',

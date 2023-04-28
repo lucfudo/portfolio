@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const NavButtons = () => {
     const [navButtons, setNavButtons] = React.useState([
         {
-            isActive: false,
+            isActive: true,
             text: texts.n_home,
             link: "/portfolio"
         },
@@ -42,7 +42,7 @@ const NavButtons = () => {
     return (
         <div className="navButtons">
             {navButtons.map((button, index) => {
-                return <Link to={button.link} onClick={() => handleClick(index)} className={button.isActive ? "active": ""}>{button.text}</Link>
+                return <Link key={index} to={button.link} onClick={() => handleClick(index)} className={button.isActive ? "active": ""}>{button.text}</Link>
             })}
         </div>
     )

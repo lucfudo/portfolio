@@ -32,13 +32,12 @@
 button{
     background-color: $color-primary;
     border-radius: $border-radius;
-    height: 3rem;
-    width: 6rem;
+    height: 2rem;
+    width: 4rem;
     text-align: center;
     padding: 0 $spacing;
     color: $white;
     font-weight: bold;
-    font-size: 1rem;
     margin-left: auto;
 }
 
@@ -56,13 +55,10 @@ button{
     .homePage{
         padding: 0 $gutter;
     }
-    .homePage > :first-child {
-        margin-top: $gutter;
-    }
     .homePage > :last-child{
         width: 100%;
     }
-  }
+}
 
 @media only screen and (min-width: $screen-web1){
     .homePage{
