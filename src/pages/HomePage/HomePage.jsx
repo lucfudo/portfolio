@@ -28,11 +28,11 @@ const HomePage = () => {
                             <div key={button.id}>
                                 {   
                                     button?.id == CV ? 
-                                        <button>{button.label}</button> 
+                                        <button onClick={() => handleButtonClick(button.link)}>{button.label}</button> 
                                     : 
-                                        <div key={button.id} onClick={() => handleButtonClick(button.link)}>
-                                            {button.icon} 
-                                        </div> 
+                                    <div key={button.id} onClick={() => handleButtonClick(button.link)}>
+                                        {button.icon} 
+                                    </div> 
                                 }
                             </div>
                         )
