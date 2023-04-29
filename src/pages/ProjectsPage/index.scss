@@ -2,9 +2,22 @@
 
 .projectsPage{
     padding: 0 $spacing;
-}
-@media only screen and (min-width: $screen-tablet) {
-    .projectsPage{
+
+    @media only screen and (min-width: $screen-tablet) {
         padding: 0 $gutter;
+    }
+}
+
+.projectsList{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: $spacing * 2;
+
+    @media only screen and (min-width: $screen-web1) {
+        flex-direction: row;
+        > * {
+            flex: 1 1 0;
+        }
     }
 }

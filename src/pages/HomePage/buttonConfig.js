@@ -19,3 +19,4 @@ export const BUTTON_CONFIG = [
       label: 'CV',
     },
   ];
+  

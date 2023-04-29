@@ -4,7 +4,6 @@
     position: relative;
     background-color: $color-primary;
     height: $nav-size;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,10 +21,10 @@
 
 @media only screen and (min-width: $screen-tablet) {
     .navBar{
-        padding: 0 $gutter; 
+        padding-inline: $gutter;
 
         > .navButtons{
-            position: initial;
+            position: static;
         }
     }
 }

@@ -3,10 +3,11 @@ import { useMediaQuery } from '@material-ui/core';
 import './index.scss';
 import skills from "./skills";
 import texts from '../../constants/texts.json';
+import { SIZE_MOBILE } from "../../constants/constants";
 
 
 const SkillsPage = () => {
-    const isMobile = useMediaQuery('(max-width: 768px)');
+    const isMobile = useMediaQuery(SIZE_MOBILE);
     const [activeIndex, setActiveIndex] = React.useState(0);
 
     const handleSkillClick = (index) => {
@@ -62,4 +63,3 @@ const SkillsPage = () => {
 };
 
 export default SkillsPage;
-

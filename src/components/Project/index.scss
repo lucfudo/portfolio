@@ -3,65 +3,49 @@
 .project{
     display: flex;
     flex-direction: column;
-    gap: $spacing;
-}
 
-.header{
-    border-bottom: solid $black 1px;
-    margin-bottom: calc($spacing / 2);
-    width: 80%;
-    > h2{
-        margin-bottom: -0.1rem;
+    .header{
+        border-bottom: solid $black 1px;
+        margin-bottom: calc($spacing / 2);
+        width: 80%;
+    
+        > h2{
+            margin-bottom: -0.1rem;
+        }
+    
+        &:hover{
+            cursor: pointer;
+        }
     }
-}
-
-.tag{
-    display: inline-block;
-    border-radius: $border-radius;
-    text-align: center;
-    padding: 0 $spacing;
-    color: $white;
-    font-family: Ravie, cursive;
-    font-size: 0.8rem;
-}
-
-.projectContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    flex-wrap: wrap;
-    overflow: hidden;
-}
-
-.thumbnail{
-    background-color: $white;
-    border-radius: $border-radius;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    max-width: $illusration-max-size;
-    img {
-        border-radius: $border-radius;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-}
-
-
-@media only screen and (min-width: $screen-tablet) {
-    .projectContent {
-        flex-direction: row;
-        gap: $spacing;
-        flex-wrap: wrap;
-    }
+    
     .thumbnail{
-        flex: 1;
-        // min-width: 100%;
+        background-color: $white;
+        border-radius: $border-radius;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        max-height: 50%;
+    
+        &:hover{
+            cursor: pointer;
+        }
+    
+        img {
+            border-radius: $border-radius;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
     }
-    .description{
-        flex: 1 1 0;
+    
+    .tag{
+        display: inline-block;
+        border-radius: $border-radius;
+        text-align: center;
+        padding: 0 $spacing;
+        color: $white;
+        font-family: Ravie, cursive;
+        font-size: 0.8rem;
     }
 }

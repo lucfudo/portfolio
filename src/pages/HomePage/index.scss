@@ -9,6 +9,43 @@
     overflow: hidden;
     padding: $spacing;
     position: relative;
+
+    > :last-child{
+        position: absolute;
+        top: 0;
+        opacity: 22%;
+        height: 100vh;
+        z-index: -1;
+    }
+
+    @media only screen and (min-width: $screen-tablet) {
+        padding: 0 $gutter;
+    
+        > :last-child {
+          width: 100%;
+        }
+      }
+    
+      @media only screen and (min-width: $screen-web1) {
+        flex-direction: row;
+    
+        > :first-child {
+          margin-top: 0;
+        }
+    
+        > :last-child {
+          position: relative;
+          opacity: 100%;
+        }
+    
+        .homePageContainer {
+          margin-right: $gutter;
+        }
+    
+        .buttons {
+          margin-top: $gutter;
+        }
+      }
 }
 
 
@@ -24,7 +61,7 @@
         color: $color-primary;
     }
 
-    :hover{
+    &:hover{
         cursor: pointer;
     }
 }
@@ -39,42 +76,4 @@ button{
     color: $white;
     font-weight: bold;
     margin-left: auto;
-}
-
-
-.homePage > :last-child{
-    position: absolute;
-    top: 0;
-    opacity: 22%;
-    height: 100vh;
-    z-index: -1;
-}
-
-
-@media only screen and (min-width: $screen-tablet) {
-    .homePage{
-        padding: 0 $gutter;
-    }
-    .homePage > :last-child{
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width: $screen-web1){
-    .homePage{
-        flex-direction: row;
-    }
-    .homePage > :first-child {
-        margin-top: 0;
-    }
-    .homePage > :last-child{
-        position: relative;
-        opacity: 100%;
-    }
-    .homePageContainer{
-        margin-right: $gutter;
-    }
-    .buttons{
-        margin-top: $gutter;
-    }
 }

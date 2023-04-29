@@ -15,18 +15,16 @@
     a {
         color: $white;
         text-transform: uppercase;
-        text-decoration: none;
         font-weight: bold;
         font-size: 14px;
+        text-decoration: none;
+
+        &.active{
+            text-decoration: underline;
+        }
     }
 
-    .active{
-        text-decoration: underline;
-    }
-}
-
-@media only screen and (min-width: $screen-tablet) {
-    .navButtons {
+    @media only screen and (min-width: $screen-tablet) {
         flex-direction: row;
         width: inherit;
     }

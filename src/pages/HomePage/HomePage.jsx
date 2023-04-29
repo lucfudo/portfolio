@@ -1,12 +1,9 @@
 import React from "react";
 import { ReactComponent as IllustrationHome } from '../../assets/illustrations/illustration-home.svg';
-import { BUTTON_CONFIG } from "./buttonConfig";
-
-import './index.scss';
-
 import texts from '../../constants/texts.json';
-
-const CV = 'cv';
+import { CV } from "../../constants/constants";
+import { BUTTON_CONFIG } from "./buttonConfig";
+import './index.scss';
 
 const HomePage = () => {
     const paragraphs = texts.presentation.split('\n');
@@ -26,15 +23,16 @@ const HomePage = () => {
                     ))}
                 </div>
                 <div className="buttons">
-                    {BUTTON_CONFIG.map((button, index) => {
+                    {BUTTON_CONFIG.map((button) => {
                         return (
-                            <div key={index}>
+                            <div key={button.id}>
                                 {   
-                                button?.id == CV ? 
-                                    <button>{button.label}</button>: 
-                                    <div key={button.id} onClick={() => handleButtonClick(button.link)}>
-                                        {button.icon} 
-                                    </div> 
+                                    button?.id == CV ? 
+                                        <button>{button.label}</button> 
+                                    : 
+                                        <div key={button.id} onClick={() => handleButtonClick(button.link)}>
+                                            {button.icon} 
+                                        </div> 
                                 }
                             </div>
                         )

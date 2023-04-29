@@ -13,17 +13,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: calc(100vh - $nav-size * 4);
 
-    align-items: center;
+    @media only screen and (min-width: $screen-tablet) {
+        padding: 0 $gutter;
+    }
 }
 
 .paragraph{
     text-align: center;
-}
-.paragraph::first-letter{
-    font-size: 2rem;
-    text-transform: uppercase;
+
+    &::first-letter{
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
 }
 
 .slider{
@@ -42,11 +46,7 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
-@media only screen and (min-width: $screen-tablet) {
-    .content{
-        padding: 0 $gutter;
-    }
-}
+
 
 @media only screen and (min-width: $screen-web1){
     .skillsPage{
@@ -68,8 +68,8 @@
       }
       .content:nth-child(odd) {
           flex-direction: row;
-          .paragraph{
+        .paragraph{
             margin-left: $spacing * 10;
-          }
         }
+    }
 }

@@ -1,14 +1,13 @@
 import React from "react";
-import './index.scss';
 import Project from "../../components/Project/Project";
 import { projects } from "./projects";
+import './index.scss';
 
 const ProjectsPage = () => {
     return (
         <div className="projectsPage">
-            <div>
-            </div>
-            <div>
+            <div />
+            <div className="projectsList">
                 {projects.map((project, index) => <Project key={index} project={project}/>)}
             </div>
         </div>
