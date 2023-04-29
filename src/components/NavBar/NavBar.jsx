@@ -2,9 +2,9 @@ import React from "react";
 import { RiCloseFill } from 'react-icons/ri';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { useMediaQuery } from '@material-ui/core';
-import { ReactComponent as Logo } from '../../assets/logo.svg';
 import NavButtons from "../NavButtons/NavButtons";
 import { SIZE_MOBILE, SIZE_ICON, COLOR_LOGO, COLOR_LOGO_ICON_MENU } from "../../constants/constants";
+import LOGO from "../../assets/logo.png";
 import './index.scss';
 
 const NavBar = () => {
@@ -17,7 +17,7 @@ const NavBar = () => {
 
     return (
         <nav className="navBar">
-            <Logo fill={COLOR_LOGO} className="logo"/>
+            <img src={LOGO} className="logo"/>
             {isMobile ? (
                 menuOpen ? (
                     <RiCloseFill aria-label={'Close menu'} color={COLOR_LOGO_ICON_MENU} size={SIZE_ICON} onClick={handleMenuClick} />
